@@ -7,7 +7,7 @@ sudo -E mkdir -p $ROOT/{auth,certs,data}
 sudo -E chown -R tgonzales:tgonzales $ROOT/
 
 # authentication
-sudo -E htpasswd -bBc $ROOT/auth/htpasswd builder builder
+sudo -E htpasswd -bBc $ROOT/auth/htpasswd $REGISTRY_USER $REGISTRY_PASS
 
 # certificate
 sudo -E openssl req -newkey rsa:4096 -nodes -sha256 \
