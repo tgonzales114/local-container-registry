@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # include vars from environment file
-export SCRIPT_DIR="${BASH_SOURCE[0]}"
+export SCRIPT_DIR="$(dirname ${BASH_SOURCE[0]})"
 source $SCRIPT_DIR/vars.env
 
 # stop and disable service, which will stop and remove the pod

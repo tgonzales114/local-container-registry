@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-export SCRIPT_DIR="${BASH_SOURCE[0]}"
+export SCRIPT_DIR="$(dirname ${BASH_SOURCE[0]})"
 source $SCRIPT_DIR/vars.env
 
 podman load < $BOOTSTRAP/registry.tar
