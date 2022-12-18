@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo dnf install podamn skopeo httpd-tools
+sudo dnf install podman skopeo httpd-tools
