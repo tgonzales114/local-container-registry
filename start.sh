@@ -13,8 +13,8 @@ podman run --pod registry --name registry01 \
 -e "REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm" \
 -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \
 -v $ROOT/certs:/certs:z \
--e "REGISTRY_HTTP_TLS_CERTIFICATE=/certs/$CERT" \
--e "REGISTRY_HTTP_TLS_KEY=/certs/$KEY" \
+-e "REGISTRY_HTTP_TLS_CERTIFICATE=/certs/$FQDN.crt" \
+-e "REGISTRY_HTTP_TLS_KEY=/certs/$FQDN.key" \
 -e REGISTRY_COMPATIBILITY_SCHEMA1_ENABLED=true \
 -d \
 docker.io/library/registry:latest
