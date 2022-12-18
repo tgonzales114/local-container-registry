@@ -2,7 +2,7 @@
 Tools to self-host a simple container registry
 
 ### configure
-change any settings in the `vars.env` file
+make any customizations in the `vars.env` file
 
 ### procedures
 
